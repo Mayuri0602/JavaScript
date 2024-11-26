@@ -1,0 +1,78 @@
+Q.  Write a program to print all natural numbers from 1 to n using while loop.
+
+
+     let i=1;
+while(i<=100){
+    console.log(i)
+    i++;
+}
+
+
+Q. Write a program to print all alphabets from a to z using while loop.
+
+
+let i=97;
+console.log("Alphabets from a to z are: ");
+while(i<=122){
+    console.log(String.fromCharCode(i));
+    i++;
+}
+
+
+Q. Write a program to print all even numbers between 1 to 100.
+
+
+let i = 1;
+while(i<=100){
+    if(i%2==0){
+        console.log(i);
+    }
+    i++;
+}
+
+
+Q.  Write a program to print all odd numbers between 1 to n using for loop.
+
+
+for(num=0;num<=100;num++){
+    if(num%2!==0){
+        console.log("num=",num);
+    }
+}
+
+
+Q. Create a game where you start with any random game number. Ask the user to keep guessing the game number until the user enters the correct value.
+
+
+let gameNum=30;
+let userNum=prompt("Guess the game number :");
+while(userNum != gameNum){
+    userNum=prompt("You entered the wrong number. Guess again :")
+}
+console.log("Congratulations, you entered the right number");
+
+
+output: 
+
+Guess the game number :67
+You entered the wrong number. Guess again :45
+You entered the wrong number. Guess again :30
+Congratulations, you entered the right number
+
+
+Q. Prompt the user to enter their full name. Generate a username for them based on the input. Start username with @, followed by their full name and ending with the fullname length.
+
+
+let fullName = prompt("enter your full name without spaces:");
+let username = "@" + fullName + fullName.length;
+console.log(username);
+
+
+output:
+ 
+enter your full name without spaces:sonaliraj
+@sonaliraj9
+
+
+ 
+
