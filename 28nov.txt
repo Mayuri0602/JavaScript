@@ -81,3 +81,79 @@ let factorial = arr.reduce((prev,curr) => {
 console.log("factorial = ",factorial);                                           //factorial==product
 
 
+
+Q. For a given array with marks of students - [39,78,56,93,80,67]
+Find the average marks of the entire class.
+
+
+let marks = [39,78,56,93,80,67];
+let sum=0;
+for(let val of marks){
+    sum += val;
+}
+let avg = sum/marks.length;
+console.log(`avg marks of the class = ${avg}`);
+
+
+output:-      
+
+avg marks of the class = 68.83333333333333
+
+
+Q. For a given array with prices of 5 items - [200,675,900,50,470]
+All items have an offer of 10% OFF on them. Change the array to store final price after applying offer.
+
+
+
+let items = [200,675,900,50,470];
+let i = 0;    //i=index
+for(let val of items){
+    let offer = val / 10;
+    items[i] = items[i] - offer;
+    console.log(`value after offer = ${items[i]}`);
+    i++;
+}
+
+             or
+
+let items = [200,675,900,50,470];
+for(let i=0;i<items.length;i++){
+    let offer = items[i]/10;
+    items[i] -= offer;
+}
+console.log(items);
+
+
+output:-
+
+
+value after offer = 180
+value after offer = 607.5
+value after offer = 810
+value after offer = 45
+value after offer = 423
+
+               or
+
+(5) [180, 607.5, 810, 45, 423]
+
+
+Q. Create an array to store companies -  "Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"
+a) Remove the first company from the array
+b) Remove Uber and add Ola in its place
+c) Add Amazon at the end.
+
+
+
+let companies = ["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"]
+console.log(companies);
+companies.shift();
+console.log(companies);
+companies.splice(1,1,"Ola");
+console.log(companies);
+companies.push("Amazon");
+console.log(companies);
+
+
+
+
